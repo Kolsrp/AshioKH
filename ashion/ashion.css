@@ -1,0 +1,1200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    display: flex;
+    padding: 0 50px;
+    box-shadow: 0px 0px 10px rgb(190, 188, 188);
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+.header .logo {
+    width: 25%;
+    height: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+}
+
+.header .menu {
+    width: 50%;
+    height: 100%;
+    /* background-color: blueviolet; */
+    display: flex;
+    align-items: center;
+}
+
+.header .menu ul {
+    display: flex;
+}
+
+.header .menu ul li {
+    list-style-type: none;
+    margin-right: 25px;
+}
+
+.header .menu ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    position: relative;
+}
+
+.header .menu ul li a::before {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: red;
+    bottom: -5px;
+    right: 50%;
+    transition: width 0.3s ;
+}
+
+.header .menu ul li a::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: red;
+    bottom: -5px;
+    left: 50%;
+    transition: width 0.3s ;
+}
+.header .menu ul li a:hover::before {
+    width: 50%;
+    transition: all 0.5s;
+}
+
+.header .menu ul li a:hover::after {
+    width: 50%;
+    transition: all 0.5s;
+}
+
+.header .icons {
+    width: 25%;
+    height: 100%;
+    /* background-color: burlywood; */
+    align-items: center;
+    display: flex;
+    justify-content: right;
+}
+
+.header .icons ul {
+    display: flex;
+}
+
+.header .icons ul li {
+    list-style-type: none;
+    margin-left: 25px;
+    position: relative;
+}
+#login {
+    font-size: 13px;
+    color: rgb(84, 83, 83);
+}
+
+.header .icons ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.header .icons ul li a i {
+    font-size: 18px;
+}
+
+.header .icons ul li span {
+    padding: 1px 6px;
+    background-color: red;
+    position: absolute;
+    top: -12px;
+    left: 10px;
+    font-size: 10px;
+    border-radius: 50%;
+    color: white;
+}
+/*============ Banner =======================*/
+.banner{
+    width: 100%;
+    height: 80vh;
+    /* background-color:violet ; */
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.ban1{
+    width: 50%;
+    height: 100%;
+    background-color: brown;
+    position: relative;
+}
+.ban2{
+    width: 49%;
+    height: 100%;
+    /* background-color: aqua; */
+}
+.ban2 .ban-up{
+    width: 100%;
+    height: 49%;
+    /* background-color: chocolate; */
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+.ban2 .ban-up .ban-up-left{
+    width: 49%;
+    height: 100%;
+    background-color: purple;
+}
+.ban2 .ban-up .ban-up-right{
+    width: 49%;
+    height: 100%;
+    background-color: purple;
+}
+.ban1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.ban2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.ban1 .ban1-text{
+    position: absolute;
+    left: 0px;
+    top: 30%;
+    padding: 50px;
+}
+.ban1 .ban1-text ul li {
+    list-style-type: none;
+    margin-top: 3%;
+}
+.ban1 .ban1-text p {
+   margin-top: 3%;
+   color: rgba(0, 0, 0, 0.671);
+}
+.ban1 .ban1-text ul li a{
+    position: relative;
+    text-decoration: none;
+    color: black;
+}
+.ban1 .ban1-text ul li a::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    background-color: red;
+}
+/* ============================= ban2*/
+ .ban-up-left .ban2-text{
+    position: absolute;
+    left: 50%;
+    right: 0;
+    padding: 50px;
+    top: 20%;
+ }
+ .ban-up-left .ban2-text ul li {
+    list-style-type: none;
+    /* margin-top: 3%; */
+}
+.ban-up-left .ban2-text p {
+   /* margin-top: 3%; */
+   color: rgba(0, 0, 0, 0.671);
+}
+.ban-up-left .ban2-text ul li a{
+    position: relative;
+    text-decoration: none;
+    color: black;
+}
+.ban-up-left .ban2-text ul li a::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    background-color: red;
+}
+.ban-up-left .ban2-text h1{
+    font-size: 25px;
+}
+/*==================== light */
+ .ban-up-right .ban3-text{
+    position: absolute;
+    left: 75%;
+    right: 0;
+    padding: 50px;
+    top: 20%;
+    
+ }
+ .ban-up-right .ban3-text ul li {
+    list-style-type: none;
+    /* margin-bottom: 3%; */
+}
+.ban-up-right .ban3-text p {
+   /* margin-bottom: 3%; */
+   color: rgba(0, 0, 0, 0.671);
+}
+.ban-up-right .ban3-text ul li a{
+    position: relative;
+    text-decoration: none;
+    color: black;
+}
+.ban-up-right .ban3-text ul li a::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    background-color: red;
+}
+.ban-up-right .ban3-text h1{
+    font-size: 25px;
+}
+/*=================*/
+.ban-up-right .ban5-text{
+    position: absolute;
+    left: 75%;
+    right: 0;
+    padding: 50px;
+    bottom: 10%;
+ }
+ .ban-up-right .ban5-text ul li {
+    list-style-type: none;
+}
+.ban-up-right .ban3-text p {
+   color: rgba(0, 0, 0, 0.671);
+}
+.ban-up-right .ban5-text ul li a{
+    position: relative;
+    text-decoration: none;
+    color: black;
+}
+.ban-up-right .ban5-text ul li a::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    background-color: red;
+}
+.ban-up-right .ban5-text h1{
+    font-size: 25px;
+}
+.ban-up-left .ban4-text{
+    position: absolute;
+    left: 50%;
+    right: 0;
+    padding: 50px;
+    bottom: 10%;
+ }
+ .ban-up-left .ban4-text ul li {
+    list-style-type: none;
+    /* margin-top: 3%; */
+}
+.ban-up-left .ban4-text p {
+   /* margin-top: 3%; */
+   color: rgba(0, 0, 0, 0.671);
+}
+.ban-up-left .ban4-text ul li a{
+    position: relative;
+    text-decoration: none;
+    color: black;
+}
+.ban-up-left .ban4-text ul li a::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    background-color: red;
+}
+.ban-up-left .ban4-text h1{
+    font-size: 25px;
+}
+/*=========Product======*/
+.product {
+    width: 100%;
+    height: 150vh;
+    background-color: white;
+    padding: 0 200px;
+}
+.product .prodm{
+    width: 100%;
+    height: 12%;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.prodm h2{
+    position: relative;
+}
+.prodm h2::before{
+    position: absolute;
+    content: "";
+    width: 10%;
+    height: 4px;
+    background-color: red;
+    bottom: -10%;
+}
+.product .prodm ul {
+    display: flex;
+
+}
+.product .prodm ul li {
+    list-style-type: none;
+    margin-left: 40px;
+}
+.product .prodm ul li a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+#all::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: red;
+    bottom: -10%;
+}
+.product .prodm h2{
+    width: 100%;
+}
+.product .picpro{
+    width: 100%;
+    height: 44%;
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product .picpro1{
+    width: 100%;
+    height: 44%;
+    background-color: rgb(255, 0, 0);
+}
+.product .picpro .pic1{
+    width: 23%;
+    height: 100%;
+    background-color: chocolate;
+}
+.product .picpro .pic1 .up{
+    width: 100%;
+    height: 75%;
+    background-color: chartreuse;
+    position: relative;
+}
+/* ======================================= */
+.product .picpro .pic1 .up .emoji{
+    width: 100%;
+    height: 20%;
+    background-color: darkturquoise;
+    position: absolute;
+    bottom: -20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product .picpro .pic1:hover .up .emoji{
+    bottom: 0;
+}
+.product .picpro .pic1 .up .emoji .emoji1{
+    width: 48px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+.product .picpro .pic1 .up .emoji .emoji1:hover{
+    background-color: red;
+    transition: 0.5s;
+}
+.product .picpro .pic1 .up .emoji .emoji1:hover i{
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+.product .picpro .pic1 .up .emoji .emoji2{
+    width: 48px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    margin-right:10px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+.product .picpro .pic1 .up .emoji .emoji2:hover{
+    background-color: red;
+    transition: 0.5s;
+}
+.product .picpro .pic1 .up .emoji .emoji2:hover i{
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+.product .picpro .pic1 .up .emoji .emoji3{
+    width: 48px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+.product .picpro .pic1 .up .emoji .emoji3:hover{
+    background-color: red;
+    transition: 0.5s;
+}
+.product .picpro .pic1 .up .emoji .emoji3:hover i{
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+/* ================================== */
+.product .picpro .pic1 .down{
+    width: 100%;
+    height: 25%;
+    background-color: palevioletred;
+    position: relative;
+}
+.product .picpro .pic1 .up img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.product .picpro .pic1 .down p{
+    position: absolute;
+    top: 0;
+    left: 17%;
+}
+.product .picpro .pic1 .down .star {
+    position: absolute;
+    top: 25%;
+    left: 38%;
+    font-size: 8px;
+    color: gold;
+}
+.product .picpro .pic1 .down h1{
+    position: absolute;
+    top: 40%;
+    left: 37%;
+    font-size: 15px;
+    
+}
+/* ========================= */
+.product .picpro .pic2{
+    width: 23%;
+    height: 100%;
+    background-color: chocolate;
+}
+.product .picpro .pic2 .up{
+    width: 100%;
+    height: 75%;
+    background-color: chartreuse;
+    position: relative;
+
+}
+.product .picpro .pic2 .up .emoji{
+    width: 100%;
+    height: 20%;
+    background-color: darkturquoise;
+    position: absolute;
+    bottom: -20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product .picpro .pic2:hover .up .emoji{
+    bottom: 0;
+}
+.product .picpro .pic2 .up .emoji .emoji1{
+    width: 48px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+.product .picpro .pic2 .up .emoji .emoji1:hover{
+    background-color: red;
+    transition: 0.5s;
+}
+.product .picpro .pic2 .up .emoji .emoji1:hover i{
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+.product .picpro .pic2 .up .emoji .emoji2{
+    width: 48px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    margin-right:10px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+.product .picpro .pic2 .up .emoji .emoji2:hover{
+    background-color: red;
+    transition: 0.5s;
+}
+.product .picpro .pic2 .up .emoji .emoji2:hover i{
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+.product .picpro .pic2 .up .emoji .emoji3{
+    width: 48px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+.product .picpro .pic2 .up .emoji .emoji3:hover{
+    background-color: red;
+    transition: 0.5s;
+}
+.product .picpro .pic2 .up .emoji .emoji3:hover i{
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+/* ======================================= */
+.product .picpro .pic2 .down{
+    width: 100%;
+    height: 25%;
+    background-color: palevioletred;
+    position: relative;
+}
+.product .picpro .pic2 .up img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.product .picpro .pic2 .down p{
+    position: absolute;
+    top: 0;
+    left: 17%;
+}
+.product .picpro .pic2 .down .star {
+    position: absolute;
+    top: 25%;
+    left: 38%;
+    font-size: 8px;
+    color: gold;
+}
+.product .picpro .pic2 .down h1{
+    position: absolute;
+    top: 40%;
+    left: 37%;
+    font-size: 15px;
+    
+}
+/* ============= */
+.product .picpro .pic3{
+    width: 23%;
+    height: 100%;
+    background-color: chocolate;
+}
+.product .picpro .pic3 .up{
+    width: 100%;
+    height: 75%;
+    background-color: chartreuse;
+    position: relative;
+}
+/* ====================== */
+.product .picpro .pic3 .up .emoji{
+    width: 100%;
+    height: 20%;
+    background-color: darkturquoise;
+    position: absolute;
+    bottom: -20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product .picpro .pic3:hover .up .emoji{
+    bottom: 0;
+}
+.product .picpro .pic3 .up .emoji .emoji1{
+    width: 48px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+.product .picpro .pic3 .up .emoji .emoji1:hover{
+    background-color: red;
+    transition: 0.5s;
+}
+.product .picpro .pic3 .up .emoji .emoji1:hover i{
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+.product .picpro .pic3 .up .emoji .emoji2{
+    width: 48px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    margin-right:10px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+.product .picpro .pic3 .up .emoji .emoji2:hover{
+    background-color: red;
+    transition: 0.5s;
+}
+.product .picpro .pic3 .up .emoji .emoji2:hover i{
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+.product .picpro .pic3 .up .emoji .emoji3{
+    width: 48px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+.product .picpro .pic3 .up .emoji .emoji3:hover{
+    background-color: red;
+    transition: 0.5s;
+}
+.product .picpro .pic3 .up .emoji .emoji3:hover i{
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+/* ================ */
+.product .picpro .pic3 .down{
+    width: 100%;
+    height: 25%;
+    background-color: palevioletred;
+    position: relative;
+}
+.product .picpro .pic3 .up img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.product .picpro .pic3 .down p{
+    position: absolute;
+    top: 0;
+    left: 17%;
+}
+.product .picpro .pic3 .down .star {
+    position: absolute;
+    top: 25%;
+    left: 38%;
+    font-size: 8px;
+    color: gold;
+}
+.product .picpro .pic3 .down h1{
+    position: absolute;
+    top: 40%;
+    left: 37%;
+    font-size: 15px;
+    
+}
+/* =========== */
+.product .picpro .pic4{
+    width: 23%;
+    height: 100%;
+    background-color: chocolate;
+}
+.product .picpro .pic4 .up{
+    width: 100%;
+    height: 75%;
+    background-color: chartreuse;
+    position: relative;
+}
+/* ======================== */
+.product .picpro .pic4 .up .emoji{
+    width: 100%;
+    height: 20%;
+    background-color: darkturquoise;
+    position: absolute;
+    bottom: -20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product .picpro .pic4:hover .up .emoji{
+    bottom: 0;
+}
+.product .picpro .pic4 .up .emoji .emoji1{
+    width: 48px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+.product .picpro .pic4 .up .emoji .emoji1:hover{
+    background-color: red;
+    transition: 0.5s;
+}
+.product .picpro .pic4 .up .emoji .emoji1:hover i{
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+.product .picpro .pic4 .up .emoji .emoji2{
+    width: 48px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    margin-right:10px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+.product .picpro .pic4 .up .emoji .emoji2:hover{
+    background-color: red;
+    transition: 0.5s;
+}
+.product .picpro .pic4 .up .emoji .emoji2:hover i{
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+.product .picpro .pic4 .up .emoji .emoji3{
+    width: 48px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+.product .picpro .pic4 .up .emoji .emoji3:hover{
+    background-color: red;
+    transition: 0.5s;
+}
+.product .picpro .pic4 .up .emoji .emoji3:hover i{
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+/* ============= */
+.product .picpro .pic4 .down{
+    width: 100%;
+    height: 25%;
+    background-color: palevioletred;
+    position: relative;
+}
+.product .picpro .pic4 .up img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.product .picpro .pic4 .down p{
+    position: absolute;
+    top: 0;
+    left: 17%;
+}
+.product .picpro .pic4 .down .star {
+    position: absolute;
+    top: 25%;
+    left: 38%;
+    font-size: 8px;
+    color: gold;
+}
+.product .picpro .pic4 .down h1{
+    position: absolute;
+    top: 40%;
+    left: 37%;
+    font-size: 15px;
+    
+}
+/* ============= product1 */
+/* ========== Collection ========== */
+
+.collection {
+    width: 100%;
+    height: 450px;
+    /* background-color: blueviolet; */
+    margin-top: 40px;
+    position: relative;
+  }
+  
+  .collection img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .collection .text-col {
+    width: 60%;
+    height: 100%;
+    background-color: blueviolet;
+    position: absolute;
+    top: 0;
+    left: 20%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+    /* padding: 0px 5rem; */
+  }
+  
+  .collection .text-col .txt {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .collection .text-col .box-text {
+    width: 700px;
+    height: auto;
+    background-color: burlywood;
+    /* margin: 0 auto; */
+    text-align: center;
+    animation-name: run;
+    animation-duration: 4s;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes run {
+    0% {
+      transform: translateX(-100%);
+    }
+    50% {
+      transform: translate(0%);
+      transition: 0.5s;
+    }
+    100% {
+      transform: translateX(100%);
+      transition: 1s;
+    }
+  }
+/* ========================================= */
+.container {
+    width: 85%;
+    height: 380px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-lg-4, .col-md-4, .col-sm-6 {
+    flex: 1 1 30%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.section-title h4 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+.section-title h4{
+    position: relative;
+}
+.section-title h4::before{
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 2px;
+    background-color: red;
+    bottom: -1%;
+}
+.trend__content {
+    background-color: #fff;
+    padding: 15px;
+}
+
+.trend__item {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.trend__item__pic img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 15px;
+}
+
+
+.trend__item__text h6 {
+    font-size: 1em;
+    margin: 0 0 5px 0;
+}
+
+.rating i {
+    color: gold;
+}
+
+.product__price {
+    color: black;
+    font-size: 1.2em;
+    font-size: 15px;
+}
+.trend__item__text .rating i{
+    font-size: 50%;
+}
+/* ================= */
+.discount{
+    width: 80%;
+    height: 390px;
+    background-color: aqua;
+    margin: 0 auto ;
+    margin-top: 50px;
+    display: flex;
+}
+.discount .dis-box{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(201, 204, 201);
+    text-align: center;
+}
+.discount .dis-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.discount .dis-box .dis-circle {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 50px 0;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+#tagh1 {
+    width: 300px;
+    position: absolute;
+    /* background-color: blueviolet; */
+    font-size: 40px;
+    top: 36%;
+    left: -25%;
+    color: red;
+}
+
+.dis-box a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: red;
+    bottom: -20%;
+    /* font-weight: bold; */
+}
+
+.dis-box span sup {
+    font-size: 15px;
+}
+/* ==================== */
+.box-a{
+    width: 85%;
+    height: 180px;
+    margin: 0 auto;
+    padding: 60px;
+    /* background-color: brown; */
+    display: flex;
+}
+.box-a .box-z{
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(201, 204, 201); */
+    text-align: center;
+}
+.box-a .box-1 {
+    width: 100%;
+    height: 1%;
+    /* background-color: aqua; */
+}
+.box-a .box-1 i{
+    margin-right: 60%;
+    font-size: 35px;
+    margin-top: 3%;
+    color: red;
+}
+.box-a .box-2 p{
+    margin-left: 40px;
+}
+/* ============ */
+.container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    /* background-color: red; */
+}
+
+.image-box {
+
+    position: relative;
+    width: 16.66%; 
+
+}
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 63%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.7);
+    padding: 100px;
+    border-radius: 5px;
+    display: none;
+}
+.overlay a{
+    text-decoration: none;
+    color: black;
+}
+.overlay i{
+    margin-left: 40%;
+    font-size: 30px;
+    margin-bottom: 10%;
+}
+ .image-box .insta i{
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+}
+.image-box:hover .overlay {
+    display: block;
+    height: 100%;
+}
+ /* ====================== */
+ .footer {
+    height: 100%;
+    width: 80%;
+    margin: 0  auto;
+    /* background-color: red; */
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-column {
+    flex: 1;
+    margin: 0 10px;
+}
+.footer-column p{
+    font-size: 13px;
+}
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+.footer-column ul li a {
+    text-decoration: none;
+    color: #333;
+}
+.footer-column .subscribe {
+    display: flex;
+}
+.footer-column .subscribe input {
+    padding: 10px;
+    flex: 1;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+}
+.footer-column .subscribe button {
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+.payment-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+.payment-icons img {
+    width: 40px;
+}
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+.social-icons a {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-color: #ddd;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+}
+.social-icons a i {
+    font-size: 16px;
+    color: #333;
+}
+/* ====================== */
+.end{
+    width: 100%;
+    height: 150px;
+    /* background-color: rebeccapurple; */
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    padding-top: 50px;
+}
+.end::before {
+    width: 80%;
+    height: 2px;
+    content: "";
+    background-color:wheat;
+    position: absolute;
+    top: 35%;
+}
+#red:hover{
+    color: red;
+}
